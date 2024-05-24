@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta del Clima</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Consulta del Clima</h1>
+    <input type="text" id="city" placeholder="Ingresa el nombre de la ciudad" required>
+    <div>
+        <button onclick="getCurrentWeather()">Clima Actual</button>
+        <button onclick="getForecast()">Pronóstico 5 Días</button>
+    </div>
+    <div class="result" id="current-weather"></div>
+    <div class="result" id="forecast-weather"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
